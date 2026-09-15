@@ -1,0 +1,135 @@
+[
+    {
+        "id":  "6a323fe5411d3b3bc2bb48b6",
+        "_id":  "6a323fe5411d3b3bc2bb48b6",
+        "name":  "Manoj Rawat",
+        "roleId":  {
+                       "_id":  "6a32a0929751a2cb7d05e572",
+                       "name":  "Chief Operating Officer (COO)"
+                   },
+        "order":  1,
+        "isActive":  false,
+        "bio":  "Mr. Manoj Rawat heads Process Excellence and Business Operations, spearheading initiatives that improve efficiency, strengthen operational performance, and accelerate business growth. Through process optimization and service excellence, he contributes significantly to achieving the organization\u0027s strategic goals.",
+        "linkedIn":  "https://www.linkedin.com/in/manojrawat1010/",
+        "twitter":  "",
+        "imageUrl":  "http://res.cloudinary.com/dakf05m4x/image/upload/v1782307274/ourTeams/manojrphoto-589bb0c3-9f3a-48cb-8467-0d5125a3fc53.png",
+        "email":  "manoj.rawat@live.in",
+        "joinedDate":  "1983-06-13T00:00:00.000Z",
+        "createdAt":  "2026-06-17T06:34:15.989Z",
+        "updatedAt":  "2026-08-28T05:48:58.645Z"
+    },
+    {
+        "id":  "6a3278d6411d3b3bc2bb729f",
+        "_id":  "6a3278d6411d3b3bc2bb729f",
+        "name":  "Mukesh Chaudhari",
+        "roleId":  {
+                       "_id":  "6a32a0819751a2cb7d05e56c",
+                       "name":  "Chief Technology Officer (CTO)"
+                   },
+        "order":  2,
+        "isActive":  false,
+        "bio":  "Mukesh is the Chief Technology Officer at Wealth Discovery, leading technology strategy, digital innovation, and platform development. He drives the company\u0027s technology vision to deliver secure, scalable, and customer focused financial solutions.",
+        "linkedIn":  "",
+        "twitter":  "",
+        "imageUrl":  "http://res.cloudinary.com/dakf05m4x/image/upload/v1781694868/ourTeams/chatgpt-image-jun-17-2026-04_43_39-p-7c044c27-f0a6-4633-b0d9-33bd6d3b3928.png",
+        "email":  "info@techculture.ai",
+        "joinedDate":  "1995-08-21T00:00:00.000Z",
+        "createdAt":  "2026-06-17T10:37:10.093Z",
+        "updatedAt":  "2026-08-28T05:49:07.071Z"
+    },
+    {
+        "id":  "6a324118411d3b3bc2bb49af",
+        "_id":  "6a324118411d3b3bc2bb49af",
+        "name":  "Subham Kumar Sahoo",
+        "roleId":  {
+                       "_id":  "6a31178fe783910e0e69c5ea",
+                       "name":  "Developer"
+                   },
+        "order":  3,
+        "isActive":  true,
+        "bio":  "Subham  is a software developer focused on web and mobile application development. He specializes in modern technologies including React, React Native, Node.js, and Next.js.",
+        "linkedIn":  "https://www.linkedin.com/in/subham-kumar-sahoo-48a649198/",
+        "twitter":  "",
+        "imageUrl":  "/team/subham-sahoo.jpg",
+        "email":  "subhamkumarsahoo109@gmail.com",
+        "joinedDate":  "1997-05-01T00:00:00.000Z",
+        "createdAt":  "2026-06-17T06:39:22.676Z",
+        "updatedAt":  "2026-09-15T12:08:53.5810691Z"
+    },
+    {
+        "id":  "6a326812411d3b3bc2bb5d84",
+        "_id":  "6a326812411d3b3bc2bb5d84",
+        "name":  "Rahul Goel",
+        "roleId":  {
+                       "_id":  "6a3265cd411d3b3bc2bb5b4b",
+                       "name":  "AI/ML Engineer"
+                   },
+        "order":  4,
+        "isActive":  true,
+        "bio":  "Rahul Goel serves as an AI/ML Engineer at EZ Wealth, leveraging cutting-edge Artificial Intelligence and Machine Learning technologies to develop innovative solutions that support business growth and operational excellence. By transforming complex data into actionable insights and building intelligent systems, he helps drive efficiency, innovation, and a future-ready digital ecosystem for the organization and its clients",
+        "linkedIn":  "",
+        "twitter":  "",
+        "imageUrl":  "https://res.cloudinary.com/dakf05m4x/image/upload/c_fill,g_face,h_560,w_420,q_auto/v1781692944/ourTeams/whatsapp-image-2026-06-17-at-10137-pm-1-d0a06c93-a880-43c2-bbd0-8a993c7dabb2.jpg",
+        "email":  "",
+        "joinedDate":  "2000-09-20T00:00:00.000Z",
+        "createdAt":  "2026-06-17T09:25:38.365Z",
+        "updatedAt":  "2026-09-15T12:11:01.3205518Z"
+    },
+    {
+        "id":  "6a326934411d3b3bc2bb5e66",
+        "_id":  "6a326934411d3b3bc2bb5e66",
+        "name":  "Nikhil Chaudhary",
+        "roleId":  {
+                       "_id":  "6a3268c1411d3b3bc2bb5e10",
+                       "name":  "Full Stack Developer"
+                   },
+        "order":  5,
+        "isActive":  false,
+        "bio":  "Nikhil Chaudhary serves as a Full Stack Developer at EZ Wealth, where he combines expertise in front-end and back-end development to create reliable, scalable, and user-centric digital solutions. By leveraging modern technologies and best development practices, he helps enhance operational efficiency, improve customer experiences, and support the organization\u0027s vision of delivering technology-driven financial services.",
+        "linkedIn":  "",
+        "twitter":  "",
+        "imageUrl":  "http://res.cloudinary.com/dakf05m4x/image/upload/v1781690018/ourTeams/chatgpt-image-jun-17-2026-03_23_01-pm-a00de4ef-4897-4bf6-9147-35b86d1805ac.png",
+        "email":  "",
+        "joinedDate":  "2003-02-04T00:00:00.000Z",
+        "createdAt":  "2026-06-17T09:30:28.423Z",
+        "updatedAt":  "2026-08-28T05:49:29.487Z"
+    },
+    {
+        "id":  "6a326a35411d3b3bc2bb5f0f",
+        "_id":  "6a326a35411d3b3bc2bb5f0f",
+        "name":  "Shivangi Gupta",
+        "roleId":  {
+                       "_id":  "6a3268c1411d3b3bc2bb5e10",
+                       "name":  "Full Stack Developer"
+                   },
+        "order":  6,
+        "isActive":  false,
+        "bio":  "As a Full Stack Developer at EZ Wealth, Shivangi Gupta develops and manages end-to-end web solutions, ensuring optimal performance, functionality, and user experience. Her technical expertise helps deliver secure, efficient, and innovative digital products that support the company\u0027s business objectives.",
+        "linkedIn":  "",
+        "twitter":  "",
+        "imageUrl":  "http://res.cloudinary.com/dakf05m4x/image/upload/v1781689546/ourTeams/chatgpt-image-jun-17-2026-03_14_55-pm-811ad776-0d13-462d-9f5c-19d52f4f6498.png",
+        "email":  "shivangi@techculture.ai",
+        "joinedDate":  "2020-08-13T00:00:00.000Z",
+        "createdAt":  "2026-06-17T09:34:45.442Z",
+        "updatedAt":  "2026-08-28T05:49:35.601Z"
+    },
+    {
+        "id":  "6a326bf2411d3b3bc2bb6042",
+        "_id":  "6a326bf2411d3b3bc2bb6042",
+        "name":  "Ananya",
+        "roleId":  {
+                       "_id":  "6a326b13411d3b3bc2bb5fad",
+                       "name":  "Full Stack Mobile App Developer"
+                   },
+        "order":  7,
+        "isActive":  false,
+        "bio":  "As a Full Stack Mobile App Developer at EZ Wealth, Ananya combines expertise in mobile application development, backend engineering, and emerging technologies to create seamless digital experiences for users. By developing secure, efficient, and user-centric mobile solutions, she supports the organization\u0027s vision of delivering technology-driven financial services and enhancing client accessibility in an increasingly digital world.",
+        "linkedIn":  "",
+        "twitter":  "",
+        "imageUrl":  "http://res.cloudinary.com/dakf05m4x/image/upload/v1781787362/ourTeams/ananya-0db25b11-654e-46ef-9b9f-b607b7081723.png",
+        "email":  "",
+        "joinedDate":  "2026-06-17T00:00:00.000Z",
+        "createdAt":  "2026-06-17T09:42:10.594Z",
+        "updatedAt":  "2026-08-28T05:49:40.490Z"
+    }
+]

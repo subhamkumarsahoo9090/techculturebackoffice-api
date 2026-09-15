@@ -1,0 +1,218 @@
+[
+  {
+    "id": "full-stack-developer",
+    "title": "Full Stack Developer",
+    "department": "Engineering",
+    "location": "India · Hybrid",
+    "type": "Full-time",
+    "experience": "2–5 years",
+    "stack": "MERN · Next.js · Node.js",
+    "summary": "Build responsive product interfaces, reliable APIs, and scalable services across our financial platforms.",
+    "responsibilities": [
+      "Design and ship production features across Next.js frontends and Node.js APIs",
+      "Own end-to-end delivery for modules spanning KYC, onboarding, and partner integrations",
+      "Write maintainable code with reviews, tests, and clear technical documentation",
+      "Collaborate with product, QA, and design to ship secure customer-facing journeys",
+      "Improve performance, observability, and reliability of existing services"
+    ],
+    "requirements": [
+      "Strong experience with React/Next.js and Node.js",
+      "Comfortable with REST APIs, MongoDB/SQL, and Git-based workflows",
+      "Understanding of authentication, validation, and secure coding practices",
+      "Clear communication and ownership mindset"
+    ],
+    "niceToHave": [
+      "Fintech or compliance-heavy product experience",
+      "Familiarity with AWS, Docker, or CI/CD pipelines"
+    ]
+  },
+  {
+    "id": "react-native-developer",
+    "title": "React Native Developer",
+    "department": "Engineering",
+    "location": "India · Hybrid",
+    "type": "Full-time",
+    "experience": "2–4 years",
+    "stack": "React Native · JavaScript · APIs",
+    "summary": "Create smooth, dependable mobile experiences used across onboarding and operational workflows.",
+    "responsibilities": [
+      "Build and maintain React Native apps for customer and operations workflows",
+      "Integrate secure APIs for KYC, auth, and document capture journeys",
+      "Optimize app performance, offline handling, and release readiness",
+      "Partner with design to deliver polished, accessible mobile UX",
+      "Support App Store / Play Store release processes with QA"
+    ],
+    "requirements": [
+      "Hands-on React Native experience shipping production apps",
+      "Strong JavaScript/TypeScript fundamentals",
+      "Experience consuming REST APIs and handling device permissions",
+      "Ability to debug across iOS and Android environments"
+    ],
+    "niceToHave": [
+      "Experience with camera, liveness, or biometric flows",
+      "Expo or bare RN workflow familiarity"
+    ]
+  },
+  {
+    "id": "qa-automation-engineer",
+    "title": "QA & Automation Engineer",
+    "department": "Quality",
+    "location": "India · Hybrid",
+    "type": "Full-time",
+    "experience": "2–5 years",
+    "stack": "Automation · API Testing · Quality",
+    "summary": "Strengthen product quality through thoughtful test strategy, automation, and reliable release practices.",
+    "responsibilities": [
+      "Design test plans for web, API, and mobile product flows",
+      "Build and maintain automation suites for regression and smoke coverage",
+      "Partner with engineering to catch defects early and improve release confidence",
+      "Validate compliance-sensitive journeys with clear evidence trails",
+      "Track quality metrics and continuously improve test coverage"
+    ],
+    "requirements": [
+      "Experience with manual and automated testing for web/API products",
+      "Familiarity with tools such as Playwright, Cypress, Postman, or similar",
+      "Strong attention to detail and clear defect reporting",
+      "Understanding of agile release cycles"
+    ],
+    "niceToHave": [
+      "Mobile automation experience",
+      "Exposure to fintech or regulated product testing"
+    ]
+  },
+  {
+    "id": "ui-ux-designer",
+    "title": "UI/UX Designer",
+    "department": "Design",
+    "location": "India · Hybrid",
+    "type": "Full-time",
+    "experience": "2–4 years",
+    "stack": "Figma · Design Systems · Prototyping",
+    "summary": "Craft clear, trustworthy product experiences for complex financial and onboarding workflows.",
+    "responsibilities": [
+      "Design end-to-end flows for web and mobile product surfaces",
+      "Build and evolve a consistent design system with engineering partners",
+      "Run lightweight research and usability validation with stakeholders",
+      "Deliver high-quality prototypes, specs, and interaction details",
+      "Balance clarity, compliance messaging, and conversion goals"
+    ],
+    "requirements": [
+      "Strong portfolio showing product UI/UX work",
+      "Proficiency in Figma and modern design workflows",
+      "Ability to design for complex forms and multi-step journeys",
+      "Collaborative approach with product and engineering"
+    ],
+    "niceToHave": [
+      "Motion/prototyping experience",
+      "B2B SaaS or fintech portfolio pieces"
+    ]
+  },
+  {
+    "id": "backend-engineer",
+    "title": "Backend Engineer",
+    "department": "Engineering",
+    "location": "India · Hybrid",
+    "type": "Full-time",
+    "experience": "3–6 years",
+    "stack": "Node.js · APIs · Databases",
+    "summary": "Design resilient services, integrations, and data flows that power our partner and customer platforms.",
+    "responsibilities": [
+      "Build scalable APIs and service layers for core product modules",
+      "Integrate third-party and partner systems with strong error handling",
+      "Improve data models, caching, and service reliability",
+      "Write clean contracts, logs, and operational runbooks",
+      "Collaborate on security, rate limiting, and auditability needs"
+    ],
+    "requirements": [
+      "Strong Node.js and API design experience",
+      "Solid database fundamentals (SQL and/or MongoDB)",
+      "Experience debugging production systems",
+      "Comfort with asynchronous workflows and integrations"
+    ],
+    "niceToHave": [
+      "Message queues, Redis, or event-driven systems",
+      "Fintech integrations or compliance logging experience"
+    ]
+  },
+  {
+    "id": "devops-engineer",
+    "title": "DevOps Engineer",
+    "department": "Platform",
+    "location": "India · Hybrid",
+    "type": "Full-time",
+    "experience": "3–6 years",
+    "stack": "AWS · CI/CD · Containers",
+    "summary": "Keep our delivery pipelines fast and our environments secure, observable, and production-ready.",
+    "responsibilities": [
+      "Own CI/CD pipelines, environments, and release automation",
+      "Improve infrastructure reliability, monitoring, and incident response",
+      "Harden security baselines across cloud resources",
+      "Partner with engineering to streamline deployments",
+      "Document runbooks and platform best practices"
+    ],
+    "requirements": [
+      "Hands-on AWS (or equivalent cloud) experience",
+      "Familiarity with Docker, CI/CD, and infrastructure as code basics",
+      "Strong troubleshooting and systems thinking",
+      "Security-conscious operational habits"
+    ],
+    "niceToHave": [
+      "Kubernetes, Terraform, or Grafana experience",
+      "SOC2 / ISO-oriented operational practices"
+    ]
+  },
+  {
+    "id": "product-manager",
+    "title": "Product Manager",
+    "department": "Product",
+    "location": "India · Hybrid",
+    "type": "Full-time",
+    "experience": "3–7 years",
+    "stack": "Discovery · Roadmaps · Delivery",
+    "summary": "Shape product direction for KYC, onboarding, and financial workflow platforms used by real institutions.",
+    "responsibilities": [
+      "Define problem statements, success metrics, and prioritized roadmaps",
+      "Translate customer and compliance needs into clear product requirements",
+      "Work closely with design and engineering through delivery",
+      "Validate outcomes with users, partners, and internal stakeholders",
+      "Communicate progress, trade-offs, and decisions with clarity"
+    ],
+    "requirements": [
+      "Proven product ownership experience in B2B or platform products",
+      "Strong written and verbal communication",
+      "Ability to balance customer value, feasibility, and compliance",
+      "Comfort working with technical and non-technical stakeholders"
+    ],
+    "niceToHave": [
+      "Fintech, KYC, or payments domain experience",
+      "Experience with analytics-led product decisions"
+    ]
+  },
+  {
+    "id": "business-analyst",
+    "title": "Business Analyst",
+    "department": "Product",
+    "location": "India · Hybrid",
+    "type": "Full-time",
+    "experience": "2–5 years",
+    "stack": "Requirements · Process · Documentation",
+    "summary": "Bridge business needs and engineering delivery with precise requirements and process clarity.",
+    "responsibilities": [
+      "Gather and document functional requirements for product initiatives",
+      "Map current and future-state workflows across teams and partners",
+      "Support UAT planning, acceptance criteria, and release readiness",
+      "Clarify edge cases, compliance constraints, and operational needs",
+      "Keep stakeholders aligned with clear documentation and follow-ups"
+    ],
+    "requirements": [
+      "Strong analytical and documentation skills",
+      "Experience writing BRDs/PRDs or equivalent artefacts",
+      "Comfort facilitating discussions across business and tech teams",
+      "Detail-oriented approach to process and edge cases"
+    ],
+    "niceToHave": [
+      "Exposure to financial services operations",
+      "Basic SQL or analytics familiarity"
+    ]
+  }
+]
