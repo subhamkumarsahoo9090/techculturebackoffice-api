@@ -2,5 +2,6 @@ node_modules/
 .env
 data/db/
 data/*.cjs
+uploads/
 *.log
 .DS_Store

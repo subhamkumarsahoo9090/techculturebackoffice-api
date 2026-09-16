@@ -20,6 +20,7 @@ function publicShape(post) {
     subtitle: post.subtitle,
     excerpt: post.excerpt,
     content: post.content,
+    contentFormat: post.contentFormat || "html",
     heroImage: post.heroImage,
     heroImageAlt: post.heroImageAlt,
     ogImage: post.ogImage,
@@ -91,10 +92,13 @@ router.get("/public/:slug", async (req, res) => {
   }
 });
 
-/** Admin list */
+/** Admin list — paginated: ?page=1&limit=10&q=&status= */
 router.get("/", requireAdmin, async (req, res) => {
   try {
     const { status, q } = req.query;
+    const page = Math.max(1, Number(req.query.page) || 1);
+    const limit = Math.min(50, Math.max(1, Number(req.query.limit) || 10));
+
     let posts = await listBlogs();
     if (status) posts = posts.filter((p) => p.status === status);
     if (q) {
@@ -108,7 +112,21 @@ router.get("/", requireAdmin, async (req, res) => {
     posts.sort(
       (a, b) => new Date(b.updatedAt || b.createdAt) - new Date(a.updatedAt || a.createdAt)
     );
-    return res.json({ success: true, total: posts.length, posts });
+
+    const total = posts.length;
+    const pages = Math.max(1, Math.ceil(total / limit));
+    const safePage = Math.min(page, pages);
+    const start = (safePage - 1) * limit;
+    const pagePosts = posts.slice(start, start + limit);
+
+    return res.json({
+      success: true,
+      total,
+      page: safePage,
+      limit,
+      pages,
+      posts: pagePosts,
+    });
   } catch (err) {
     console.error(err);
     return res.status(500).json({ success: false, message: "Failed to load blogs" });
@@ -153,6 +171,7 @@ router.post("/", requireAdmin, async (req, res) => {
       subtitle: body.subtitle || "",
       excerpt: body.excerpt || "",
       content: body.content || "",
+      contentFormat: body.contentFormat === "markdown" ? "markdown" : "html",
       heroImage: body.heroImage || "",
       heroImageAlt: body.heroImageAlt || "",
       ogImage: body.ogImage || body.heroImage || "",
@@ -193,6 +212,13 @@ router.put("/:id", requireAdmin, async (req, res) => {
       ...body,
       id: prev.id,
       slug: body.slug || prev.slug,
+      content: body.content !== undefined ? body.content : prev.content,
+      contentFormat:
+        body.contentFormat === "markdown"
+          ? "markdown"
+          : body.contentFormat === "html"
+            ? "html"
+            : prev.contentFormat || "html",
       tags: Array.isArray(body.tags) ? body.tags : prev.tags,
       status: nextStatus,
       publishedAt:

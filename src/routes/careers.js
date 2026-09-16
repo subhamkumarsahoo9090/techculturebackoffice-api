@@ -52,8 +52,39 @@ router.get("/public/:id", async (req, res) => {
 
 router.get("/", requireAdmin, async (req, res) => {
   try {
-    const jobs = await listJobs();
-    return res.json({ success: true, total: jobs.length, jobs });
+    const { q } = req.query;
+    const page = Math.max(1, Number(req.query.page) || 1);
+    const limit = Math.min(50, Math.max(1, Number(req.query.limit) || 10));
+
+    let jobs = await listJobs();
+    if (q) {
+      const needle = String(q).toLowerCase();
+      jobs = jobs.filter(
+        (j) =>
+          j.title?.toLowerCase().includes(needle) ||
+          j.stack?.toLowerCase().includes(needle) ||
+          j.department?.toLowerCase().includes(needle) ||
+          j.summary?.toLowerCase().includes(needle)
+      );
+    }
+    jobs.sort(
+      (a, b) => new Date(b.updatedAt || b.createdAt || 0) - new Date(a.updatedAt || a.createdAt || 0)
+    );
+
+    const total = jobs.length;
+    const pages = Math.max(1, Math.ceil(total / limit));
+    const safePage = Math.min(page, pages);
+    const start = (safePage - 1) * limit;
+    const pageJobs = jobs.slice(start, start + limit);
+
+    return res.json({
+      success: true,
+      total,
+      page: safePage,
+      limit,
+      pages,
+      jobs: pageJobs,
+    });
   } catch (err) {
     console.error(err);
     return res.status(500).json({ success: false, message: "Failed to load jobs" });
