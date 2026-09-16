@@ -10,6 +10,7 @@ import authRoutes from "./routes/auth.js";
 import blogRoutes from "./routes/blogs.js";
 import careerRoutes from "./routes/careers.js";
 import teamRoutes from "./routes/team.js";
+import demoRoutes from "./routes/demos.js";
 import uploadRoutes, { UPLOAD_DIR } from "./routes/uploads.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -27,10 +28,11 @@ app.use("/uploads", express.static(UPLOAD_DIR));
 
 app.get("/api/health", async (_req, res) => {
   try {
-    const [blogs, jobs, team] = await Promise.all([
+    const [blogs, jobs, team, demos] = await Promise.all([
       countCollection("blogs"),
       countCollection("jobs"),
       countCollection("team"),
+      countCollection("demoBookings"),
     ]);
     res.json({
       success: true,
@@ -40,6 +42,7 @@ app.get("/api/health", async (_req, res) => {
       blogs,
       jobs,
       team,
+      demos,
     });
   } catch (err) {
     console.error(err);
@@ -51,6 +54,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/blogs", blogRoutes);
 app.use("/api/careers", careerRoutes);
 app.use("/api/team", teamRoutes);
+app.use("/api/demos", demoRoutes);
 app.use("/api/uploads", uploadRoutes);
 
 app.use((err, _req, res, _next) => {
@@ -65,6 +69,7 @@ async function start() {
     console.log(`   Blog public : GET /api/blogs/public`);
     console.log(`   Careers public: GET /api/careers/public`);
     console.log(`   Team public: GET /api/team/public`);
+    console.log(`   Demos public: POST /api/demos/public`);
     console.log(`   Uploads    : POST /api/uploads/image`);
   });
 }

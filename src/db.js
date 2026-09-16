@@ -1,7 +1,7 @@
 import { nanoid } from "nanoid";
 import { getDb } from "./mongo.js";
 
-const ALLOWED = new Set(["blogs", "jobs", "team", "admins"]);
+const ALLOWED = new Set(["blogs", "jobs", "team", "admins", "demoBookings"]);
 
 function assertName(name) {
   if (!ALLOWED.has(name)) {
