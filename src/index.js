@@ -1,8 +1,6 @@
 import express from "express";
 import cors from "cors";
 import morgan from "morgan";
-import path from "path";
-import { fileURLToPath } from "url";
 import { config } from "./config.js";
 import { connectMongo } from "./mongo.js";
 import { countCollection } from "./db.js";
@@ -11,9 +9,9 @@ import blogRoutes from "./routes/blogs.js";
 import careerRoutes from "./routes/careers.js";
 import teamRoutes from "./routes/team.js";
 import demoRoutes from "./routes/demos.js";
-import uploadRoutes, { UPLOAD_DIR } from "./routes/uploads.js";
+import contactRoutes from "./routes/contacts.js";
+import uploadRoutes, { serveUpload } from "./routes/uploads.js";
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
 
 app.use(
@@ -24,7 +22,8 @@ app.use(
 );
 app.use(express.json({ limit: "5mb" }));
 app.use(morgan("dev"));
-app.use("/uploads", express.static(UPLOAD_DIR));
+// Serve from disk cache first, then MongoDB (survives Render restarts)
+app.get("/uploads/:filename", serveUpload);
 
 app.get("/api/health", async (_req, res) => {
   try {
@@ -55,6 +54,7 @@ app.use("/api/blogs", blogRoutes);
 app.use("/api/careers", careerRoutes);
 app.use("/api/team", teamRoutes);
 app.use("/api/demos", demoRoutes);
+app.use("/api/contacts", contactRoutes);
 app.use("/api/uploads", uploadRoutes);
 
 app.use((err, _req, res, _next) => {
@@ -70,6 +70,7 @@ async function start() {
     console.log(`   Careers public: GET /api/careers/public`);
     console.log(`   Team public: GET /api/team/public`);
     console.log(`   Demos public: POST /api/demos/public`);
+    console.log(`   Contacts   : POST /api/contacts/public`);
     console.log(`   Uploads    : POST /api/uploads/image`);
   });
 }
