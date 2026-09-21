@@ -10,6 +10,7 @@ import careerRoutes from "./routes/careers.js";
 import teamRoutes from "./routes/team.js";
 import demoRoutes from "./routes/demos.js";
 import contactRoutes from "./routes/contacts.js";
+import faqRoutes from "./routes/faqs.js";
 import uploadRoutes, { serveUpload } from "./routes/uploads.js";
 
 const app = express();
@@ -55,6 +56,7 @@ app.use("/api/careers", careerRoutes);
 app.use("/api/team", teamRoutes);
 app.use("/api/demos", demoRoutes);
 app.use("/api/contacts", contactRoutes);
+app.use("/api/faqs", faqRoutes);
 app.use("/api/uploads", uploadRoutes);
 
 app.use((err, _req, res, _next) => {
@@ -71,6 +73,7 @@ async function start() {
     console.log(`   Team public: GET /api/team/public`);
     console.log(`   Demos public: POST /api/demos/public`);
     console.log(`   Contacts   : POST /api/contacts/public`);
+    console.log(`   FAQs public: GET /api/faqs/public`);
     console.log(`   Uploads    : POST /api/uploads/image`);
   });
 }
